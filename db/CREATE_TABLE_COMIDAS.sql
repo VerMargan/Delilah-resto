@@ -1,8 +1,0 @@
-CREATE TABLE comidas (
-    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    name VARCHAR (50) UNIQUE NOT NULL,
-    photoURL VARCHAR (300) NOT NULL
-    description VARCHAR (500) NOT NULL,
-    price INT UNSIGNED NOT NULL
-    inhabilitada BOOLEAN DEFAULT false
-)
