@@ -26,8 +26,8 @@ module.exports.agregarPedido = async function (usuario_id, formaPago, detalle, o
         const [datosPedido] = await sql.query(pedidoDatos, { replacements: [usuario_id] })
 
 
-        for (let p = 0; p < idsYcantidad.length; p++) {
-            await sql.query(comidas_y_pedidos, { replacements: [datosPedido[0].pedido_id, idsYcantidad[p][0], idsYcantidad[p][1], precio] })
+        for (let i = 0; i < idsYcantidad.length; i++) {
+            await sql.query(comidas_y_pedidos, { replacements: [datosPedido[datosPedido.length - 1].pedido_id, idsYcantidad[i][0], idsYcantidad[i][1], precio] })
         }
         return 'pedido agregado correctamente'
     } catch (error) {

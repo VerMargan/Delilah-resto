@@ -24,3 +24,4 @@ INSERT INTO `pedidosconcomidas` (`comida_id`, `pedido_id`, `cantidad`, `precioUn
 (6, 3, 1, 320),
 (1, 3, 3, 500),
 (4, 3, 1, 350);
+INSERT INTO `pedidosconcomidas` (`comida_id`, `pedido_id`, `cantidad`, `precioUnidad`) VALUES ('3', '16', '1', '300');
